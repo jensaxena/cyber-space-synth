@@ -1,0 +1,17 @@
+$darkColor: black;
+$lightColor: white;
+
+$baseFont: 'Open Sans', sans-serif;
+
+$medType: calc(1.6rem + (3 - 1.6) * ((100vw - 300px) / (1600 - 300)));
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $darkColor;
+  color: $lightColor;
+  font-family: $baseFont;
+  font-size: $medType;
+}
