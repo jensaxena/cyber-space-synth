@@ -150,3 +150,48 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: calc(1.6rem + (3 - 1.6) * ((100vw - 300px) / (1600 - 300))); }
+
+main {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh; }
+
+.board {
+  position: relative;
+  -webkit-perspective: 200px;
+  perspective: 200px; }
+
+.key {
+  display: inline-block;
+  -webkit-transform: rotateX(60deg);
+  transform: rotateX(60deg);
+  width: 50px; }
+
+.white {
+  border: 4px solid cyan;
+  height: 200px; }
+
+.black {
+  border: 4px solid purple;
+  height: calc(200px - 25%);
+  position: absolute;
+  top: 0px;
+  z-index: 1; }
+
+.black:nth-child(5),
+.black:nth-child(7) {
+  margin-left: -25px; }
+
+.black:nth-child(10),
+.black:nth-child(12) {
+  margin-left: -50px; }
