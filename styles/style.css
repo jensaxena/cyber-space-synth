@@ -236,7 +236,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   position: absolute;
   width: 1px; }
 
-#stars {
+/*
+  THIS ANIMATION SHAMELESSLY STOLEN FROM:
+    * https://codepen.io/saransh/pen/BKJun
+*/
+#stars1 {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -245,7 +249,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-animation: space 50s linear infinite;
   animation: space 50s linear infinite; }
 
-#stars:after {
+#stars1:after {
   content: " ";
   position: absolute;
   top: 2000px;
