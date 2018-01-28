@@ -24,16 +24,32 @@
   <meta name="msapplication-wide310x150logo" content="/widetile.png" />
   <meta name="msapplication-square310x310logo" content="/largetile.png" />
   <title>Super Cyber Space Synth</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
+  <!--
+    THANKS AND CITATIONS
+    ********************
+
+    SYNTH CONCEPT INSPIRED BY:
+      * http://zachberry.com/talks/2014/lets-build-a-synth-with-js
+      * https://code.tutsplus.com/tutorials/the-web-audio-api-make-your-own-web-synthesizer--cms-23887
+
+    SPACE ANIMATION STOLEN FROM:
+      * https://codepen.io/saransh/pen/BKJun
+
+  -->
 </head>
 <body>
+  <div class="space">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
   <header>
     <h1>Super Cyber Space Synth</h1>
   </header>
   <main>
-    <div class="board" id="board">
+    <div class="board">
       <div class="key white" data-key="65" data-freq="220">
         <p class="label">A</p>
       </div>
@@ -73,7 +89,7 @@
       <div class="key white" data-key="76" data-freq="440">
         <p class="label">L</p>
       </div>
-    </div><!-- .board #board -->
+    </div><!-- .board -->
   </main>
   <!-- <footer>
     <p>Powered by the <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></p>
