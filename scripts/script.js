@@ -28,6 +28,8 @@ synth.play = function() {
   else {
     $('.key').removeClass('insist');
 
+    $(synth.key).fadeOut(100).fadeIn(100);
+
     synth.note(synth.freq);
   };
 };
