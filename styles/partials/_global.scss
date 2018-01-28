@@ -17,12 +17,13 @@ html {
 body {
   background: radial-gradient(
     circle at bottom,
-    $colorDark -50%,
+    $colorDark 0%,
     black 100%
   );
   font-family: $fontContent;
   font-size: $typeMd;
-  min-height: calc(100vh);
+  height: 100vh;
+  position: relative;
 }
 
 header {
