@@ -5,17 +5,34 @@ body {
   background: -webkit-radial-gradient(bottom circle, navy 0%, black 100%);
   background: -o-radial-gradient(bottom circle, navy 0%, black 100%);
   background: radial-gradient(circle at bottom, navy 0%, black 100%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-family: "Audiowide", sans-serif;
   font-size: 2rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: 100vh;
+  margin: 0 auto;
   position: relative; }
 
 header {
-  padding: 5rem 0; }
+  -webkit-box-shadow: 0 0 100px purple;
+  box-shadow: 0 0 100px purple;
+  padding-top: 5rem; }
   header h1 {
     color: cyan;
     font-family: "Press Start 2P", sans-serif;
     font-size: calc(1.2rem + (24 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    letter-spacing: 0.25rem;
     margin: 0;
     text-align: center;
     text-transform: lowercase; }
@@ -32,8 +49,17 @@ main {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 60vh; }
+  justify-content: center; }
+
+footer {
+  color: white;
+  font-size: 1rem;
+  margin: 1rem auto;
+  width: 90vw;
+  text-align: right; }
+  footer a {
+    color: purple;
+    text-decoration: none; }
 
 .insist {
   -webkit-animation: flash 1s ease-out infinite;
@@ -243,6 +269,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   background-size: 200px 200px;
   bottom: 0;
   left: 0;
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
@@ -253,21 +280,24 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   animation: space 180s ease-in-out infinite;
   background-image: -webkit-radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
   background-image: -o-radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
-  background-image: radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)), radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0)); }
+  background-image: radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)), radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+  border: 1px dashed purple; }
 
 .stars2 {
   -webkit-animation: space 240s ease-in-out infinite;
   animation: space 240s ease-in-out infinite;
   background-image: -webkit-radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
   background-image: -o-radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
-  background-image: radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)), radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0)); }
+  background-image: radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)), radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+  border: 1px dashed purple; }
 
 .stars3 {
   -webkit-animation: space 300s ease-in-out infinite;
   animation: space 300s ease-in-out infinite;
   background-image: -webkit-radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)), -webkit-radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
   background-image: -o-radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)), -o-radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
-  background-image: radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)), radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0)); }
+  background-image: radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)), radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)), radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)), radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)), radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+  border: 1px dashed purple; }
 
 @-webkit-keyframes space {
   0% {
