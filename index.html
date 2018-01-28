@@ -25,25 +25,56 @@
   <meta name="msapplication-square310x310logo" content="/largetile.png" />
   <title>Super Cyber Space Synth</title>
   <link rel="stylesheet" href="styles/style.css">
+  <!-- CONCEPT DRAWS IN PART FROM http://zachberry.com/talks/2014/lets-build-a-synth-with-js -->
 </head>
 <body>
   <main>
-    <div class="board">
-      <div class="key white"></div>
-      <div class="key black"></div>
-      <div class="key white"></div>
-      <div class="key white"></div>
-      <div class="key black"></div>
-      <div class="key white"></div>
-      <div class="key black"></div>
-      <div class="key white"></div>
-      <div class="key white"></div>
-      <div class="key black"></div>
-      <div class="key white"></div>
-      <div class="key black"></div>
-      <div class="key white"></div>
-    </div><!-- .board -->
+    <div class="board" id="board">
+      <div class="key white" data-key="65" data-freq="220">
+        <p class="label">A</p>
+      </div>
+      <div class="key black" data-key="87" data-freq="233">
+        <p class="label">W</p>
+      </div>
+      <div class="key white" data-key="83" data-freq="247">
+        <p class="label">S</p>
+      </div>
+      <div class="key white" data-key="68" data-freq="262">
+        <p class="label">D</p>
+      </div>
+      <div class="key black" data-key="82" data-freq="277">
+        <p class="label">R</p>
+      </div>
+      <div class="key white" data-key="70" data-freq="294">
+        <p class="label">F</p>
+      </div>
+      <div class="key black" data-key="84" data-freq="311">
+        <p class="label">T</p>
+      </div>
+      <div class="key white" data-key="72" data-freq="330">
+        <p class="label">H</p>
+      </div>
+      <div class="key white" data-key="74" data-freq="349">
+        <p class="label">J</p>
+      </div>
+      <div class="key black" data-key="85" data-freq="370">
+        <p class="label">U</p>
+      </div>
+      <div class="key white" data-key="75" data-freq="392">
+        <p class="label">K</p>
+      </div>
+      <div class="key black" data-key="73" data-freq="415">
+        <p class="label">I</p>
+      </div>
+      <div class="key white" data-key="76" data-freq="440">
+        <p class="label">L</p>
+      </div>
+    </div><!-- .board #board -->
   </main>
+  <!-- <footer>
+    <p>Powered by the <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></p>
+  </footer> -->
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
   <script src="scripts/script.js"></script>
 </body>
 </html>
