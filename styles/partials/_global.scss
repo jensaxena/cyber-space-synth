@@ -28,6 +28,19 @@ main {
   perspective: 200px;
 }
 
+.insist {
+  animation: flash 1s ease-out infinite;
+}
+
+@keyframes flash {
+  from {
+    box-shadow: 0 0 5px black;
+  }
+  to {
+    box-shadow: 0 1px 5px white;
+  }
+}
+
 .key {
   display: inline-block;
   transform: rotateX(60deg);
@@ -40,6 +53,7 @@ main {
 }
 
 .black {
+  background: rgba(128, 0, 128, 0.5);
   border: 4px solid purple;
   height: calc(200px - 25%);
   position: absolute;
@@ -55,4 +69,16 @@ main {
 .black:nth-child(10),
 .black:nth-child(12) {
   margin-left: -50px;
+}
+
+.label {
+  text-align: center;
+}
+
+.white .label {
+  margin-top: 400%;
+}
+
+.black .label {
+  margin-top: 275%;
 }

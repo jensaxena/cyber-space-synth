@@ -171,6 +171,26 @@ main {
   -webkit-perspective: 200px;
   perspective: 200px; }
 
+.insist {
+  -webkit-animation: flash 1s ease-out infinite;
+  animation: flash 1s ease-out infinite; }
+
+@-webkit-keyframes flash {
+  from {
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black; }
+  to {
+    -webkit-box-shadow: 0 1px 5px white;
+    box-shadow: 0 1px 5px white; } }
+
+@keyframes flash {
+  from {
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black; }
+  to {
+    -webkit-box-shadow: 0 1px 5px white;
+    box-shadow: 0 1px 5px white; } }
+
 .key {
   display: inline-block;
   -webkit-transform: rotateX(60deg);
@@ -182,6 +202,7 @@ main {
   height: 200px; }
 
 .black {
+  background: rgba(128, 0, 128, 0.5);
   border: 4px solid purple;
   height: calc(200px - 25%);
   position: absolute;
@@ -195,3 +216,12 @@ main {
 .black:nth-child(10),
 .black:nth-child(12) {
   margin-left: -50px; }
+
+.label {
+  text-align: center; }
+
+.white .label {
+  margin-top: 400%; }
+
+.black .label {
+  margin-top: 275%; }
