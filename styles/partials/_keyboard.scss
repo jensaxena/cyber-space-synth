@@ -1,0 +1,58 @@
+.board {
+  position: relative;
+  perspective: 600px;
+}
+
+.key {
+  border: 1px solid white;
+  display: inline-block;
+  transform: rotateX(20deg);
+}
+
+.white {
+  background: transparentize(
+    $color: $colorLight,
+    $amount: 0.75
+  );
+  border-radius: 5px;
+  box-shadow:
+    1px 5px 10px $colorLight,
+    1px -2px 10px $colorLight,
+    2px 2px 10px 5px $colorLight inset;
+  height: 200px;
+  width: 50px;
+}
+
+.black {
+  background: transparentize(
+    $color: $colorAccent,
+    $amount: 0.4
+  );
+  border-radius: 5px;
+  box-shadow:
+    1px 5px 10px $colorAccent,
+    1px -2px 5px $colorAccent,
+    -2px 2px 5px 2px $colorAccent inset;
+  height: calc(200px - 25%);
+  margin-left: -20px;
+  position: absolute;
+  top: 0px;
+  width: 40px;
+  z-index: 1;
+}
+
+.label {
+  font-weight: 900;
+  text-align: center;
+  text-shadow:
+    1px 1px 2px white,
+    -1px -0.5px 5px white;
+}
+
+.white .label {
+  margin-top: 165px;
+}
+
+.black .label {
+  margin-top: 120px;
+}

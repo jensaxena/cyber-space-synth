@@ -1,0 +1,12 @@
+.insist {
+  animation: flash 1s ease-out infinite;
+}
+
+@keyframes flash {
+  from {
+    background: rgba(0, 0, 128, 0.5);
+  }
+  to {
+    background: rgba(64, 224, 208, 0.5);
+  }
+}
