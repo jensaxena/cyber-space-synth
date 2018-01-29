@@ -7,7 +7,7 @@
   border: 1px solid white;
   display: inline-block;
   transform: rotateX(20deg);
-  width: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+  width: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .white {
@@ -34,7 +34,7 @@
     1px -2px 5px $colorAccent,
     -2px 2px 5px 2px $colorAccent inset;
   height: calc(200px - 25%);
-  margin-left: -5%;
+  margin-left: -6%;
   position: absolute;
   top: 0px;
   z-index: 1;

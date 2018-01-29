@@ -17,7 +17,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   font-family: "Audiowide", sans-serif;
-  font-size: calc(1.2rem + (10 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(1.4rem + (10 - 1.4) * ((100vw - 300px) / (1600 - 300)));
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -34,7 +34,7 @@ header {
     border-bottom: 1px solid purple;
     color: cyan;
     font-family: "Press Start 2P", sans-serif;
-    font-size: calc(1.2rem + (24 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(1.4rem + (24 - 1.4) * ((100vw - 300px) / (1600 - 300)));
     letter-spacing: 0.25rem;
     margin: 0;
     text-align: center;
@@ -90,7 +90,7 @@ footer {
   display: inline-block;
   -webkit-transform: rotateX(20deg);
   transform: rotateX(20deg);
-  width: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300))); }
+  width: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300))); }
 
 .white {
   background: rgba(0, 255, 255, 0.25);
@@ -105,7 +105,7 @@ footer {
   -webkit-box-shadow: 1px 5px 10px purple, 1px -2px 5px purple, -2px 2px 5px 2px purple inset;
   box-shadow: 1px 5px 10px purple, 1px -2px 5px purple, -2px 2px 5px 2px purple inset;
   height: calc(200px - 25%);
-  margin-left: -5%;
+  margin-left: -6%;
   position: absolute;
   top: 0px;
   z-index: 1; }
