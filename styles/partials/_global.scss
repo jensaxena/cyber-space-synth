@@ -6,40 +6,44 @@ $fontContent: 'Audiowide', sans-serif;
 $fontDisplay: 'Press Start 2P', sans-serif;
 
 $typeLg: calc(1.2rem + (24 - 1.2) * ((100vw - 300px) / (1600 - 300)));
-$typeMd: 2rem;
+$typeMd: calc(1.2rem + (10 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 $typeSm: 1rem;
 
 html {
-  font-size: 62.5%;
-}
-
-body {
   background: radial-gradient(
     circle at bottom,
     $colorDark 0%,
     black 100%
   );
+  font-size: 62.5%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
   display: flex;
   flex-direction: column;
   font-family: $fontContent;
   font-size: $typeMd;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 300px;
   margin: 0 auto;
+  max-width: 1600px;
   position: relative;
 }
 
 header {
-  box-shadow: 0 0 100px $colorAccent;
   padding-top: 5rem;
   h1 {
+    border-bottom: 1px solid $colorAccent;
     color: $colorLight;
     font-family: $fontDisplay;
     font-size: $typeLg;
     letter-spacing: 0.25rem;
     margin: 0;
     text-align: center;
-    text-transform: lowercase;
+    text-transform: uppercase;
   }
 }
 

@@ -1,10 +1,12 @@
 html {
-  font-size: 62.5%; }
-
-body {
   background: -webkit-radial-gradient(bottom circle, navy 0%, black 100%);
   background: -o-radial-gradient(bottom circle, navy 0%, black 100%);
   background: radial-gradient(circle at bottom, navy 0%, black 100%);
+  font-size: 62.5%;
+  height: 100vh;
+  overflow: hidden; }
+
+body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,27 +17,28 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   font-family: "Audiowide", sans-serif;
-  font-size: 2rem;
+  font-size: calc(1.2rem + (10 - 1.2) * ((100vw - 300px) / (1600 - 300)));
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 300px;
   margin: 0 auto;
+  max-width: 1600px;
   position: relative; }
 
 header {
-  -webkit-box-shadow: 0 0 100px purple;
-  box-shadow: 0 0 100px purple;
   padding-top: 5rem; }
   header h1 {
+    border-bottom: 1px solid purple;
     color: cyan;
     font-family: "Press Start 2P", sans-serif;
     font-size: calc(1.2rem + (24 - 1.2) * ((100vw - 300px) / (1600 - 300)));
     letter-spacing: 0.25rem;
     margin: 0;
     text-align: center;
-    text-transform: lowercase; }
+    text-transform: uppercase; }
 
 main {
   -webkit-box-align: center;
@@ -86,15 +89,15 @@ footer {
   border: 1px solid white;
   display: inline-block;
   -webkit-transform: rotateX(20deg);
-  transform: rotateX(20deg); }
+  transform: rotateX(20deg);
+  width: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300))); }
 
 .white {
   background: rgba(0, 255, 255, 0.25);
   border-radius: 5px;
   -webkit-box-shadow: 1px 5px 10px cyan, 1px -2px 10px cyan, 2px 2px 10px 5px cyan inset;
   box-shadow: 1px 5px 10px cyan, 1px -2px 10px cyan, 2px 2px 10px 5px cyan inset;
-  height: 200px;
-  width: 50px; }
+  height: 200px; }
 
 .black {
   background: rgba(128, 0, 128, 0.6);
@@ -102,10 +105,9 @@ footer {
   -webkit-box-shadow: 1px 5px 10px purple, 1px -2px 5px purple, -2px 2px 5px 2px purple inset;
   box-shadow: 1px 5px 10px purple, 1px -2px 5px purple, -2px 2px 5px 2px purple inset;
   height: calc(200px - 25%);
-  margin-left: -20px;
+  margin-left: -5%;
   position: absolute;
   top: 0px;
-  width: 40px;
   z-index: 1; }
 
 .label {
@@ -263,13 +265,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   width: 1px; }
 
 .space {
-  background: rgba(128, 0, 128, 0.01);
-  background-position: center;
-  background-repeat: round;
+  background: rgba(128, 0, 128, 0.01) round center;
   background-size: 200px 200px;
   bottom: 0;
   left: 0;
-  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
