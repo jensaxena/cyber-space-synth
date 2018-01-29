@@ -8,8 +8,8 @@ synth.vol = synth.audio.createGain();
 
 // SET DEFAULTS
 // synth.wave.type = 'sine';
-// synth.wave.type = 'square';
-synth.wave.type = 'triangle';
+synth.wave.type = 'square';
+// synth.wave.type = 'triangle';
 // synth.wave.type = 'sawtooth';
 
 synth.vol.gain.value = 0;
@@ -46,7 +46,6 @@ synth.init = function() {
   $(window).keydown(function(e) {
     synth.key = $(`div[data-key="${e.keyCode}"]`);
     synth.freq = synth.key.attr('data-freq');
-
     synth.play(synth.key, synth.freq);
   });
 };
