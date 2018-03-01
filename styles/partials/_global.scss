@@ -1,13 +1,15 @@
-$colorAccent: purple;
+$colorAccent: red;
 $colorDark: navy;
 $colorLight: cyan;
+$colorMid: purple;
+
 
 $fontContent: 'Audiowide', sans-serif;
 $fontDisplay: 'Press Start 2P', sans-serif;
 
 $typeLg: calc(1.4rem + (24 - 1.4) * ((100vw - 300px) / (1600 - 300)));
 $typeMd: calc(1.4rem + (10 - 1.4) * ((100vw - 300px) / (1600 - 300)));
-$typeSm: 1rem;
+$typeSm: 1.2rem;
 
 html {
   background: radial-gradient(
@@ -36,7 +38,7 @@ body {
 header {
   padding-top: 5rem;
   h1 {
-    border-bottom: 1px solid $colorAccent;
+    border-bottom: 1px solid $colorMid;
     color: $colorLight;
     font-family: $fontDisplay;
     font-size: $typeLg;
@@ -47,6 +49,18 @@ header {
   }
 }
 
+aside {
+  text-align: center;
+}
+
+aside,
+footer {
+  color: white;
+  font-size: $typeSm;
+  margin: 1rem auto;
+  width: 90vw;
+}
+
 main {
   align-items: center;
   display: flex;
@@ -54,13 +68,9 @@ main {
 }
 
 footer {
-  color: white;
-  font-size: $typeSm;
-  margin: 1rem auto;
-  width: 90vw;
   text-align: right;
   a {
-    color: $colorAccent;
+    color: $colorMid;
     text-decoration: none;
   }
 }
