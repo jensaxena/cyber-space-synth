@@ -1,0 +1,21 @@
+input.preset {
+  // THIS IS NEW. IT DOES NOT WORK IN IE
+  appearance: none;
+
+  border: 2px solid $colorAccent;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.2rem;
+  margin: 0 0.2rem -0.2rem 1rem;
+  transition: 0.2s all linear;
+  width: 1.2rem;
+}
+
+input.preset:first-of-type {
+  margin-left: 0;
+}
+
+input.preset:checked {
+  background: $colorLight;
+  box-shadow: 0 0 10px $colorLight;
+}
