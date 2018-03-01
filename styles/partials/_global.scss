@@ -3,13 +3,17 @@ $colorDark: navy;
 $colorLight: cyan;
 $colorMid: purple;
 
-
 $fontContent: 'Audiowide', sans-serif;
 $fontDisplay: 'Press Start 2P', sans-serif;
 
 $typeLg: calc(1.4rem + (24 - 1.4) * ((100vw - 300px) / (1600 - 300)));
 $typeMd: calc(1.4rem + (10 - 1.4) * ((100vw - 300px) / (1600 - 300)));
 $typeSm: 1.2rem;
+
+@mixin flexY {
+  display: flex;
+  flex-direction: column;
+}
 
 html {
   background: radial-gradient(
@@ -23,8 +27,8 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  @include flexY;
+
   font-family: $fontContent;
   font-size: $typeMd;
   justify-content: space-between;
@@ -62,8 +66,9 @@ footer {
 }
 
 main {
+  @include flexY;
+
   align-items: center;
-  display: flex;
   justify-content: center;
 }
 
